@@ -1,42 +1,304 @@
-[INFO ] 2025-12-04 13:27:18.597 [main] AccountRegistration - Clicked on My Account 
-[INFO ] 2025-12-04 13:27:19.776 [main] AccountRegistration - Clicked on  Register
-[INFO ] 2025-12-04 13:27:20.635 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
-[INFO ] 2025-12-04 13:27:21.204 [main] AccountRegistration - Entered valueBravo in field  Last Name 
-[INFO ] 2025-12-04 13:27:21.914 [main] AccountRegistration - Entered valuejohnny123@abc.com in field  Email 
-[INFO ] 2025-12-04 13:27:23.015 [main] AccountRegistration - Entered value9876563 in field  Telephone 
-[INFO ] 2025-12-04 13:27:23.980 [main] AccountRegistration - Entered value!@#POa in field password 
-[INFO ] 2025-12-04 13:27:24.596 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
-[INFO ] 2025-12-04 13:27:25.519 [main] AccountRegistration - Selected Yes for  Subscribe 
-[INFO ] 2025-12-04 13:27:25.522 [main] AccountRegistration - Action subscribe = Yes is not applicable
-[INFO ] 2025-12-04 13:31:53.088 [main] AccountRegistration - Clicked on My Account 
-[INFO ] 2025-12-04 13:31:54.415 [main] AccountRegistration - Clicked on  Register
-[INFO ] 2025-12-04 13:31:55.720 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
-[INFO ] 2025-12-04 13:31:56.591 [main] AccountRegistration - Entered valueBravo in field  Last Name 
-[INFO ] 2025-12-04 13:31:57.911 [main] AccountRegistration - Entered valuejohnny123@abc.com in field  Email 
-[INFO ] 2025-12-04 13:31:59.468 [main] AccountRegistration - Entered value9876563 in field  Telephone 
-[INFO ] 2025-12-04 13:32:00.658 [main] AccountRegistration - Entered value!@#POa in field password 
-[INFO ] 2025-12-04 13:32:01.995 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
-[INFO ] 2025-12-04 13:32:02.628 [main] AccountRegistration - Selected Yes for  Subscribe 
-[INFO ] 2025-12-04 13:32:04.176 [main] AccountRegistration - Clicked on Continue
-[INFO ] 2025-12-04 13:37:04.316 [main] AccountRegistration - Clicked on My Account 
-[INFO ] 2025-12-04 13:37:05.350 [main] AccountRegistration - Clicked on  Register
-[INFO ] 2025-12-04 13:37:05.839 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
-[INFO ] 2025-12-04 13:37:06.432 [main] AccountRegistration - Entered valueBravo in field  Last Name 
-[INFO ] 2025-12-04 13:37:07.312 [main] AccountRegistration - Entered valuejohnny123@abc.com in field  Email 
-[INFO ] 2025-12-04 13:37:08.259 [main] AccountRegistration - Entered value9876563 in field  Telephone 
-[INFO ] 2025-12-04 13:37:08.999 [main] AccountRegistration - Entered value!@#POa in field password 
-[INFO ] 2025-12-04 13:37:09.516 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
-[INFO ] 2025-12-04 13:37:10.134 [main] AccountRegistration - Selected Yes for  Subscribe 
-[INFO ] 2025-12-04 13:37:11.506 [main] AccountRegistration - Clicked on Privacy policy 
-[INFO ] 2025-12-04 13:37:14.256 [main] AccountRegistration - Clicked on  Continue
-[INFO ] 2025-12-04 13:37:52.701 [main] AccountRegistration - Clicked on My Account 
-[INFO ] 2025-12-04 13:37:54.002 [main] AccountRegistration - Clicked on  Register
-[INFO ] 2025-12-04 13:37:54.937 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
-[INFO ] 2025-12-04 13:37:55.584 [main] AccountRegistration - Entered valueBravo in field  Last Name 
-[INFO ] 2025-12-04 13:37:57.100 [main] AccountRegistration - Entered valuejohnny123@abc.com in field  Email 
-[INFO ] 2025-12-04 13:37:57.716 [main] AccountRegistration - Entered value9876563 in field  Telephone 
-[INFO ] 2025-12-04 13:37:58.636 [main] AccountRegistration - Entered value!@#POa in field password 
-[INFO ] 2025-12-04 13:37:59.348 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
-[INFO ] 2025-12-04 13:37:59.784 [main] AccountRegistration - Selected Yes for  Subscribe 
-[INFO ] 2025-12-04 13:38:00.178 [main] AccountRegistration - Clicked on Privacy policy 
-[INFO ] 2025-12-04 13:38:01.443 [main] AccountRegistration - Clicked on  Continue
+[INFO ] 2025-12-05 14:49:10.442 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-05 14:49:11.656 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-05 14:49:12.126 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-05 14:49:12.692 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-05 14:49:13.474 [main] AccountRegistration - Entered valuejohnny123@abc.com in field  Email 
+[INFO ] 2025-12-05 14:49:14.895 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-05 14:49:15.437 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-05 14:49:16.274 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-05 14:49:17.372 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-05 14:49:17.738 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-05 14:49:17.739 [main] AccountRegistration - Action  Continu is not applicable
+[INFO ] 2025-12-05 14:50:22.418 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-05 14:50:24.204 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-05 14:50:25.344 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-05 14:50:26.104 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-05 14:50:27.492 [main] AccountRegistration - Entered valuejohnny123@abc.com in field  Email 
+[INFO ] 2025-12-05 14:50:28.452 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-05 14:50:28.961 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-05 14:50:29.287 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-05 14:50:29.654 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-05 14:50:30.310 [main] AccountRegistration - Clicked on Privacy policy 
+[ERROR] 2025-12-05 14:50:40.390 [main] AccountRegistration - Could not click on  Continue org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='Continu']"}
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53abb979e799b7f412d9a355c18afb09, findElement {value=//input[@value='Continu'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ejazh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57757}, goog:processID: 11952, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57757/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53abb979e799b7f412d9a355c18afb09
+[INFO ] 2025-12-05 15:03:23.856 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-05 15:03:25.333 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-05 15:03:26.148 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-05 15:03:27.047 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-05 15:03:28.178 [main] AccountRegistration - Entered valuejohnny123@abc.com in field  Email 
+[INFO ] 2025-12-05 15:03:28.897 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-05 15:03:29.871 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-05 15:03:30.745 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-05 15:03:31.774 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-05 15:03:32.521 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-05 15:03:33.455 [main] AccountRegistration - Clicked on  Continue
+[ERROR] 2025-12-05 15:03:43.619 [main] AccountRegistration - Assert failed due to following Exception org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div/h1[contains(text(),'Your Account')]"}
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [62da40a25f49931855501771eb4fcea7, findElement {value=//div/h1[contains(text(),'Your Account')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ejazh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65516}, goog:processID: 2760, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65516/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 62da40a25f49931855501771eb4fcea7
+[INFO ] 2025-12-05 15:05:19.476 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-05 15:05:20.596 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-05 15:05:21.467 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-05 15:05:22.659 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-05 15:05:23.303 [main] AccountRegistration - Entered valuejohnny345@abc.com in field  Email 
+[INFO ] 2025-12-05 15:05:23.831 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-05 15:05:24.777 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-05 15:05:25.496 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-05 15:05:26.048 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-05 15:05:26.444 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-05 15:05:28.043 [main] AccountRegistration - Clicked on  Continue
+[INFO ] 2025-12-05 15:08:37.370 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-05 15:08:38.237 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-05 15:08:38.785 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-05 15:08:39.427 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-05 15:08:39.942 [main] AccountRegistration - Entered valuejohnny345@abc.com in field  Email 
+[INFO ] 2025-12-05 15:08:40.304 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-05 15:08:40.780 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-05 15:08:41.118 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-05 15:08:41.343 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-05 15:08:41.866 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-05 15:08:44.642 [main] AccountRegistration - Clicked on  Continue
+[ERROR] 2025-12-05 15:08:55.634 [main] AccountRegistration - Assert failed due to following Exception org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div/h1[contains(text(),'Your Account')]"}
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cb7cff9a4649a377ac0373a9293bb552, findElement {value=//div/h1[contains(text(),'Your Account')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ejazh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62424}, goog:processID: 11268, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62424/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cb7cff9a4649a377ac0373a9293bb552
+[INFO ] 2025-12-05 15:09:16.375 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-05 15:09:18.094 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-05 15:09:19.484 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-05 15:09:19.755 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-05 15:09:20.333 [main] AccountRegistration - Entered valuejohnny345@abc.com in field  Email 
+[INFO ] 2025-12-05 15:09:20.796 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-05 15:09:21.401 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-05 15:09:21.771 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-05 15:09:22.268 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-05 15:09:23.056 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-05 15:09:24.405 [main] AccountRegistration - Clicked on  Continue
+[ERROR] 2025-12-05 15:09:34.514 [main] AccountRegistration - Assert failed due to following Exception org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div/h1[contains(text(),'Your Account')]"}
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e6059cd7dbff8d37888dfaeb6888f89, findElement {value=//div/h1[contains(text(),'Your Account')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ejazh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49418}, goog:processID: 3480, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49418/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e6059cd7dbff8d37888dfaeb6888f89
+[INFO ] 2025-12-05 15:15:00.450 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-05 15:15:02.749 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-05 15:15:03.525 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-05 15:15:04.529 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-05 15:15:05.492 [main] AccountRegistration - Entered valuejohnny78@abc.com in field  Email 
+[INFO ] 2025-12-05 15:15:06.191 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-05 15:15:07.360 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-05 15:15:07.725 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-05 15:15:08.604 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-05 15:15:09.100 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-05 15:15:11.474 [main] AccountRegistration - Clicked on  Continue
+[INFO ] 2025-12-05 15:15:28.670 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-05 15:15:29.639 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-05 15:15:30.637 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-05 15:15:31.558 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-05 15:15:32.731 [main] AccountRegistration - Entered valuejohnny345@abc.com in field  Email 
+[INFO ] 2025-12-05 15:15:33.617 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-05 15:15:34.195 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-05 15:15:34.980 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-05 15:15:35.734 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-05 15:15:36.153 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-05 15:15:37.772 [main] AccountRegistration - Clicked on  Continue
+[INFO ] 2025-12-05 15:25:38.305 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-05 15:25:40.410 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-05 15:25:41.244 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-05 15:25:42.073 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-05 15:25:42.805 [main] AccountRegistration - Entered valuejohnny09@abc.com in field  Email 
+[INFO ] 2025-12-05 15:25:43.277 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-05 15:25:44.323 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-05 15:25:44.934 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-05 15:25:45.672 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-05 15:25:46.145 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-05 15:25:48.139 [main] AccountRegistration - Clicked on  Continue
+[ERROR] 2025-12-05 15:25:48.658 [main] AccountRegistration - Could not click on Continue org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [efe71d087e28a2209e5d9f6a74a28164, clickElement {id=f.C16EAB00C411E2520B917AD20233DFB3.d.552CBC544428F194A8D8B61AB9571CA9.e.116}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ejazh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56172}, goog:processID: 14100, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56172/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (efe71d087e28a2209e5d9f6a74a28164)] -> xpath: //input[@value='Continue']]
+Session ID: efe71d087e28a2209e5d9f6a74a28164
+[INFO ] 2025-12-05 15:26:09.836 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-05 15:26:11.259 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-05 15:26:11.878 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-05 15:26:12.592 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-05 15:26:13.108 [main] AccountRegistration - Entered valuejohnny345@abc.com in field  Email 
+[INFO ] 2025-12-05 15:26:13.541 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-05 15:26:13.825 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-05 15:26:14.045 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-05 15:26:14.287 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-05 15:26:14.500 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-05 15:26:15.234 [main] AccountRegistration - Clicked on  Continue
+[INFO ] 2025-12-05 15:29:23.575 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-05 15:29:25.193 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-05 15:29:26.194 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-05 15:29:27.538 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-05 15:29:28.117 [main] AccountRegistration - Entered valuejohnny9@abc.com in field  Email 
+[INFO ] 2025-12-05 15:29:28.595 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-05 15:29:29.456 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-05 15:29:30.870 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-05 15:29:31.544 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-05 15:29:32.430 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-05 15:29:34.612 [main] AccountRegistration - Clicked on  Continue
+[ERROR] 2025-12-05 15:29:35.077 [main] AccountRegistration - Could not click on Continue org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dfa10aec3af6d464001e56d1cea2c186, clickElement {id=f.3EE95B564D55C178C4F5D14694882D5E.d.3A5AE00A83847A6E8E61FC4F91AAA70D.e.118}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ejazh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59266}, goog:processID: 14436, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59266/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dfa10aec3af6d464001e56d1cea2c186)] -> xpath: //input[@value='Continue']]
+Session ID: dfa10aec3af6d464001e56d1cea2c186
+[INFO ] 2025-12-05 15:31:09.818 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-05 15:31:11.703 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-05 15:31:12.707 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-05 15:31:13.829 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-05 15:31:14.739 [main] AccountRegistration - Entered valuejohnny090@abc.com in field  Email 
+[INFO ] 2025-12-05 15:31:15.112 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-05 15:31:15.461 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-05 15:31:15.790 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-05 15:31:16.258 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-05 15:31:16.544 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-05 15:31:18.393 [main] AccountRegistration - Clicked on  Continue
+[ERROR] 2025-12-05 15:31:18.706 [main] AccountRegistration - Could not click on Continue org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4f58507e8e955d2a20279752eade36c1, clickElement {id=f.2CEE968A1C29791B24C9EE73B12EB908.d.E9C49B9914354A09E84DCD3D09E5BB6B.e.116}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ejazh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62187}, goog:processID: 12320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62187/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4f58507e8e955d2a20279752eade36c1)] -> xpath: //input[@value='Continue']]
+Session ID: 4f58507e8e955d2a20279752eade36c1
+[INFO ] 2025-12-05 15:58:18.955 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-05 15:58:21.918 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-05 15:58:22.534 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-05 15:58:22.884 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-05 15:58:23.447 [main] AccountRegistration - Entered valuejohnny0098@abc.com in field  Email 
+[INFO ] 2025-12-05 15:58:23.952 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-05 15:58:24.299 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-05 15:58:24.914 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-05 15:58:25.796 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-05 15:58:26.673 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-05 15:58:28.641 [main] AccountRegistration - Clicked on  Continue
+[INFO ] 2025-12-05 16:00:55.352 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-05 16:00:56.980 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-05 16:00:57.856 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-05 16:00:58.308 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-05 16:00:58.779 [main] AccountRegistration - Entered valuejohnny008@abc.com in field  Email 
+[INFO ] 2025-12-05 16:00:59.058 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-05 16:00:59.293 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-05 16:00:59.552 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-05 16:00:59.778 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-05 16:01:00.210 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-05 16:01:02.717 [main] AccountRegistration - Clicked on  Continue
+[INFO ] 2025-12-05 16:03:01.135 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-05 16:03:03.372 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-05 16:03:04.273 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-05 16:03:04.707 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-05 16:03:05.559 [main] AccountRegistration - Entered valuejohnny0008@abc.com in field  Email 
+[INFO ] 2025-12-05 16:03:05.891 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-05 16:03:07.146 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-05 16:03:08.085 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-05 16:03:08.689 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-05 16:03:09.090 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-05 16:03:10.514 [main] AccountRegistration - Clicked on  Continue
+[ERROR] 2025-12-05 16:03:11.150 [main] AccountRegistration - Could not click on Continue org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ab02434eed360d950d1ce4c233ec3f48, clickElement {id=f.2F27EB7348638AB7663E2B5894445908.d.D96B1276ECFCD2C4DA70DF23A71FE17F.e.111}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ejazh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52412}, goog:processID: 12916, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52412/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ab02434eed360d950d1ce4c233ec3f48)] -> xpath: //input[@value='Continue']]
+Session ID: ab02434eed360d950d1ce4c233ec3f48
+[INFO ] 2025-12-05 16:05:41.356 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-05 16:05:42.959 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-05 16:05:43.654 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-05 16:05:44.380 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-05 16:05:46.207 [main] AccountRegistration - Entered valuejohnny008@abc.com in field  Email 
+[INFO ] 2025-12-05 16:05:47.155 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-05 16:05:48.060 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-05 16:05:48.782 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-05 16:05:49.865 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-05 16:05:51.431 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-05 16:05:52.438 [main] AccountRegistration - Clicked on  Continue
+[ERROR] 2025-12-05 16:06:02.624 [main] AccountRegistration - Assert failed due to following Exception org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div/h1[contains(text(),'Your Account')]"}
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dec4ec600cf01dd66d507382bde4b286, findElement {value=//div/h1[contains(text(),'Your Account')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ejazh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60154}, goog:processID: 10420, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60154/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dec4ec600cf01dd66d507382bde4b286
+[INFO ] 2025-12-05 16:06:39.342 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-05 16:06:41.299 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-05 16:06:41.887 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-05 16:06:42.714 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-05 16:06:43.724 [main] AccountRegistration - Entered valuejohnny080@abc.com in field  Email 
+[INFO ] 2025-12-05 16:06:44.590 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-05 16:06:45.295 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-05 16:06:45.596 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-05 16:06:46.024 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-05 16:06:46.451 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-05 16:06:48.429 [main] AccountRegistration - Clicked on  Continue
+[INFO ] 2025-12-05 16:16:02.989 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-05 16:16:03.900 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-05 16:16:04.841 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-05 16:16:05.316 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-05 16:16:05.814 [main] AccountRegistration - Entered valuejohnny0800@abc.com in field  Email 
+[INFO ] 2025-12-05 16:16:06.772 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-05 16:16:07.221 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-05 16:16:08.422 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-05 16:16:09.369 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-05 16:16:09.833 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-05 16:16:13.002 [main] AccountRegistration - Clicked on  Continue
+[INFO ] 2025-12-05 16:19:57.837 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-05 16:20:00.220 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-05 16:20:01.188 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-05 16:20:02.457 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-05 16:20:03.411 [main] AccountRegistration - Entered valuejohnny0801@abc.com in field  Email 
+[INFO ] 2025-12-05 16:20:03.710 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-05 16:20:04.158 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-05 16:20:04.522 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-05 16:20:04.839 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-05 16:20:05.260 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-05 16:20:08.153 [main] AccountRegistration - Clicked on  Continue
+[INFO ] 2025-12-05 16:27:46.434 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-05 16:27:48.119 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-05 16:27:49.327 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-05 16:27:50.130 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-05 16:27:50.817 [main] AccountRegistration - Entered valuejohnny0802@abc.com in field  Email 
+[INFO ] 2025-12-05 16:27:51.300 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-05 16:27:52.075 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-05 16:27:53.242 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-05 16:27:53.956 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-05 16:27:54.856 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-05 16:27:56.173 [main] AccountRegistration - Clicked on  Continue

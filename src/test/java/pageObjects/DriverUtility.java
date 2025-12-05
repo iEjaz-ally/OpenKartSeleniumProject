@@ -8,14 +8,17 @@ import java.util.Map;
 
 import javax.swing.JScrollBar;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.PageLoadStrategy;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
@@ -98,5 +101,15 @@ public class DriverUtility {
 				.ignoring(Exception.class);
 	
 	wait.until(ExpectedConditions.visibilityOf(ele));
+	}
+	public static <T> void fluentWait( WebDriver driver, String xpath){
+		FluentWait wait = new FluentWait(driver);
+		wait.withTimeout(Duration.ofSeconds(300));
+		wait.pollingEvery(Duration.ofSeconds(5));
+		wait.ignoring(StaleElementReferenceException.class);
+	//	wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(""+xPath.trim()+"")));
+		
+		wait.until(ExpectedConditions.refreshed(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath))));
+		
 	}
 }

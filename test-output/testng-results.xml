@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-04T13:37:34 IST" name="Default suite" finished-at="2025-12-04T13:38:01 IST" duration-ms="26812">
+  <suite started-at="2025-12-05T16:27:24 IST" name="Default suite" finished-at="2025-12-05T16:27:59 IST" duration-ms="34213">
     <groups>
     </groups>
-    <test started-at="2025-12-04T13:37:34 IST" name="Default test" finished-at="2025-12-04T13:38:01 IST" duration-ms="26812">
+    <test started-at="2025-12-05T16:27:24 IST" name="Default test" finished-at="2025-12-05T16:27:59 IST" duration-ms="34213">
       <class name="testCases.AccountRegistrationTestCase">
-        <test-method signature="registeringUser()[pri:0, instance:testCases.AccountRegistrationTestCase@45752059]" started-at="2025-12-04T13:37:34 IST" name="registeringUser" finished-at="2025-12-04T13:38:01 IST" duration-ms="26543" status="PASS">
+        <test-method signature="registeringUser()[pri:0, instance:testCases.AccountRegistrationTestCase@34e9fd99]" started-at="2025-12-05T16:27:25 IST" name="registeringUser" finished-at="2025-12-05T16:27:58 IST" duration-ms="33817" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registeringUser -->
-        <test-method is-config="true" signature="breakDown()[pri:0, instance:testCases.AccountRegistrationTestCase@45752059]" started-at="2025-12-04T13:38:01 IST" name="breakDown" finished-at="2025-12-04T13:38:01 IST" duration-ms="44" status="PASS">
+        <test-method is-config="true" signature="breakDown()[pri:0, instance:testCases.AccountRegistrationTestCase@34e9fd99]" started-at="2025-12-05T16:27:59 IST" name="breakDown" finished-at="2025-12-05T16:27:59 IST" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- breakDown -->
