@@ -1,0 +1,42 @@
+[INFO ] 2025-12-04 13:27:18.597 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-04 13:27:19.776 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-04 13:27:20.635 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-04 13:27:21.204 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-04 13:27:21.914 [main] AccountRegistration - Entered valuejohnny123@abc.com in field  Email 
+[INFO ] 2025-12-04 13:27:23.015 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-04 13:27:23.980 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-04 13:27:24.596 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-04 13:27:25.519 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-04 13:27:25.522 [main] AccountRegistration - Action subscribe = Yes is not applicable
+[INFO ] 2025-12-04 13:31:53.088 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-04 13:31:54.415 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-04 13:31:55.720 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-04 13:31:56.591 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-04 13:31:57.911 [main] AccountRegistration - Entered valuejohnny123@abc.com in field  Email 
+[INFO ] 2025-12-04 13:31:59.468 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-04 13:32:00.658 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-04 13:32:01.995 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-04 13:32:02.628 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-04 13:32:04.176 [main] AccountRegistration - Clicked on Continue
+[INFO ] 2025-12-04 13:37:04.316 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-04 13:37:05.350 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-04 13:37:05.839 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-04 13:37:06.432 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-04 13:37:07.312 [main] AccountRegistration - Entered valuejohnny123@abc.com in field  Email 
+[INFO ] 2025-12-04 13:37:08.259 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-04 13:37:08.999 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-04 13:37:09.516 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-04 13:37:10.134 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-04 13:37:11.506 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-04 13:37:14.256 [main] AccountRegistration - Clicked on  Continue
+[INFO ] 2025-12-04 13:37:52.701 [main] AccountRegistration - Clicked on My Account 
+[INFO ] 2025-12-04 13:37:54.002 [main] AccountRegistration - Clicked on  Register
+[INFO ] 2025-12-04 13:37:54.937 [main] AccountRegistration - Entered valueJohnny in field FIrst Name 
+[INFO ] 2025-12-04 13:37:55.584 [main] AccountRegistration - Entered valueBravo in field  Last Name 
+[INFO ] 2025-12-04 13:37:57.100 [main] AccountRegistration - Entered valuejohnny123@abc.com in field  Email 
+[INFO ] 2025-12-04 13:37:57.716 [main] AccountRegistration - Entered value9876563 in field  Telephone 
+[INFO ] 2025-12-04 13:37:58.636 [main] AccountRegistration - Entered value!@#POa in field password 
+[INFO ] 2025-12-04 13:37:59.348 [main] AccountRegistration - Entered value!@#POa in field  password confirm 
+[INFO ] 2025-12-04 13:37:59.784 [main] AccountRegistration - Selected Yes for  Subscribe 
+[INFO ] 2025-12-04 13:38:00.178 [main] AccountRegistration - Clicked on Privacy policy 
+[INFO ] 2025-12-04 13:38:01.443 [main] AccountRegistration - Clicked on  Continue
