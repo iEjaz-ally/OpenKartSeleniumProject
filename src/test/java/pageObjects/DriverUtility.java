@@ -3,22 +3,13 @@ package pageObjects;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.swing.JScrollBar;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
@@ -31,7 +22,21 @@ public class DriverUtility {
 	
 	static ExcelUtilities utilities;
 	
-	public static void initializeBrowser() throws IOException {
+	static String browserName;
+	
+	static String urlString;
+
+	
+	public static void getData() throws IOException
+	{
+utilities = new ExcelUtilities(System.getProperty("user.dir")+ File.separator + "testData" + File.separator + "testData.xlsx");
+		
+		browserName = utilities.getCellData(utilities.getSheetName(0), 1, 1);
+		
+		urlString = utilities.getCellData(utilities.getSheetName(0), 0,1);
+		utilities.closeWorkBook();
+	}
+	/*public static void initializeBrowser() throws IOException {
 		
 		utilities = new ExcelUtilities(System.getProperty("user.dir")+ File.separator + "testData" + File.separator + "testData.xlsx");
 		
@@ -61,7 +66,6 @@ public class DriverUtility {
 			    getDriver().get(urlString);
 			    getDriver().manage().deleteAllCookies();
 			    getDriver().manage().window().maximize();
-			    Thread.sleep(6000);
 			    break;
 
 		case "EDGE":
@@ -79,18 +83,77 @@ public class DriverUtility {
 		}
 	//	getDriver().manage().deleteAllCookies();
 		
+	}*/
+	
+public static WebDriver initializeBrowser() throws IOException {
+		
+	WebDriver driver = null;
+		try{
+			switch(browserName.replace(" ", "").toUpperCase()) {
+	
+			case "CHROME":
+			    ChromeOptions options = new ChromeOptions();
+			    options.addArguments("--remote-allow-origins=*");
+			    options.addArguments("--disable-blink-features=AutomationControlled");
+			    options.addArguments("--disable-infobars");
+			    options.addArguments("--disable-dev-shm-usage");
+			    options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+
+			    System.setProperty("webdriver.http.factory", "jdk-http-client");
+			    System.setProperty("selenium.disable.devtools", "true"); // *** key fix ***
+
+			    WebDriverManager.chromedriver().setup();
+			   driver = new ChromeDriver(options);
+			 /*   driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
+			    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			    driver.get(urlString);
+			    driver.manage().deleteAllCookies();
+			    driver.manage().window().maximize();*/
+
+			    break;
+
+		case "EDGE":
+			WebDriverManager.edgedriver().setup();	
+		break;
+		default:
+			throw new Exception("Browser couldn't be initilized");
+			} 
+
+		}catch (Exception e) {
+			System.out.println(e.getMessage());
+			
+		}
+	//	getDriver().manage().deleteAllCookies();
+		return driver;
+		
+	}
+
+public static void setBrowser() {
+		switch (browserName.toUpperCase().replace(" ", "")) {
+		case "CHROME":
+		
+			try {
+				driver.set(initializeBrowser());
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			  getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
+			    getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			    getDriver().get(urlString);
+			    getDriver().manage().deleteAllCookies();
+			    getDriver().manage().window().maximize();
+			break;
+
+		default:
+			break;
+		}
 	}
 	public static WebDriver getDriver() {
 		return driver.get();
 	}
 	
-	public static <T> T getpage(Class<T> class1)  {
-		try {
-			initializeBrowser();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
+	public static <T> T getpage(Class<T> class1) throws IOException  {
+	
 		return PageFactory.initElements(getDriver(), class1);
 		
 	}

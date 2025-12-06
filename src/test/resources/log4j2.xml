@@ -6,33 +6,29 @@
 
     <Appenders>
 
-        <!-- Console Logging -->
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"/>
         </Console>
 
-        <!-- Rolling File Logging -->
         <RollingFile name="fileLogger"
-                     fileName="${basePath}/app.log"
-                     filePattern="${basePath}/app-%d{yyyy-MM-dd}.log"
-                     append="true">
+                     fileName="${basePath}/Execution-${date:yyyy-MM-dd-HH-mm}.log"
+                     filePattern="${basePath}/Execution-%d{yyyy-MM-dd-HH-mm}.log"
+                     append="false">
 
             <PatternLayout>
                 <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n</pattern>
             </PatternLayout>
 
             <Policies>
-                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
-                <SizeBasedTriggeringPolicy size="10MB"/>
+                <OnStartupTriggeringPolicy />
             </Policies>
 
-            <!-- Max 10 files will be created everyday -->
             <DefaultRolloverStrategy max="10">
                 <Delete basePath="${basePath}" maxDepth="10">
-                    <!-- Delete all files older than 30 days -->
                     <IfLastModified age="30d"/>
                 </Delete>
             </DefaultRolloverStrategy>
+
         </RollingFile>
 
     </Appenders>

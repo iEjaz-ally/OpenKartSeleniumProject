@@ -87,7 +87,7 @@ public class AccountRegistration {
 			logger.info("Clicked on "+ action);
 			}catch (Exception e) {
 				// TODO: handle exception
-				DriverUtility.fluentWait(DriverUtility.getDriver(), "//div/a[text()='Continue']");
+			//	DriverUtility.fluentWait(DriverUtility.getDriver(), "//div/a[text()='Continue']");
 				DriverUtility.getDriver().findElement(By.xpath("//div/a[text()='Continue']")).click();
 				
 			}

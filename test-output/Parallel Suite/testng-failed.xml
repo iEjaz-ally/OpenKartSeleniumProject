@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="tests" name="tests-2(failed)">
+<suite thread-count="2" parallel="tests" name="Failed suite [Parallel Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test-1(failed)">
     <classes>
       <class name="testCases.AccountRegistrationTestCase">
         <methods>
@@ -11,8 +11,8 @@
         </methods>
       </class> <!-- testCases.AccountRegistrationTestCase -->
     </classes>
-  </test> <!-- tests-2(failed) -->
-  <test thread-count="2" parallel="tests" name="tests-1(failed)">
+  </test> <!-- Test-1(failed) -->
+  <test thread-count="2" parallel="tests" name="Test-2(failed)">
     <classes>
       <class name="testCases.AccountRegistrationTestCase">
         <methods>
@@ -22,5 +22,5 @@
         </methods>
       </class> <!-- testCases.AccountRegistrationTestCase -->
     </classes>
-  </test> <!-- tests-1(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Test-2(failed) -->
+</suite> <!-- Failed suite [Parallel Suite] -->

@@ -12,8 +12,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelUtilities {
 
 	
-	static FileInputStream inputStream;
-	XSSFWorkbook workBook;
+	private static ThreadLocal<XSSFWorkbook> workBook = new ThreadLocal<>();
 	XSSFSheet sheet;
 	XSSFRow row;
 	XSSFCell cell;
@@ -23,41 +22,51 @@ public class ExcelUtilities {
 		this.filePathString = filePath;
 		
 	}
+	public void setWorkBook() throws IOException {
+		FileInputStream	inputStream = new FileInputStream(filePathString);
+		try {
+			inputStream = new FileInputStream(filePathString);
+			XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
+			
+			workBook.set(workbook);
+		} catch (FileNotFoundException e) {
+			
+			e.printStackTrace();
+		}
+		inputStream.close();
+		
+	}
+	
+	public XSSFWorkbook getXSSFWorkbook() {
+		return workBook.get();
+	}
 
 	public String getSheetName(int sheetNo) throws IOException {
-		inputStream = new FileInputStream(filePathString);
-		workBook = new XSSFWorkbook(inputStream);
-		workBook.close();
-		inputStream.close();
+		setWorkBook();
+		
 
-		return workBook.getSheetName(sheetNo);
-	}
+		return getXSSFWorkbook().getSheetName(sheetNo);
+		}
 	public int getRowCount(String sheetName) throws IOException {
-		inputStream = new FileInputStream(filePathString);
-		workBook = new XSSFWorkbook(inputStream);
-		sheet = workBook.getSheet(sheetName);
-		int rowCount = sheet.getPhysicalNumberOfRows();
-		workBook.close();
-		inputStream.close();
-		return rowCount;
+		setWorkBook();
+		sheet = getXSSFWorkbook().getSheet(sheetName);
+		
+		return sheet.getLastRowNum()-sheet.getFirstRowNum();
 	}
 	public int getCellCount(String sheetName, int rowNo) throws IOException {
 		
-		workBook = new XSSFWorkbook(inputStream);
-		sheet = workBook.getSheet(sheetName);
+		setWorkBook();
+		sheet = getXSSFWorkbook().getSheet(sheetName);
 		row = sheet.getRow(rowNo);
 		int cellCount = row.getLastCellNum();
-		workBook.close();
-		inputStream.close();
 		return  cellCount;
 	}
 	public String getCellData(String sheetName, int rowNo, int cellNo) {
 		String dataString = "";
 	try {
-		inputStream = new FileInputStream(filePathString);
-		workBook = new XSSFWorkbook(inputStream);
-	
-		sheet = workBook.getSheet(sheetName);
+		setWorkBook();
+		 
+		sheet= getXSSFWorkbook().getSheet(sheetName);
 		row = sheet.getRow(rowNo);
 		cell = row.getCell(cellNo);
 		
@@ -69,6 +78,10 @@ public class ExcelUtilities {
 		dataString = " NullValue";
 	}
 	return dataString;
+	}
+	public void closeWorkBook() throws IOException {
+		getXSSFWorkbook().close();
+		workBook.remove();
 	}
 }
 
