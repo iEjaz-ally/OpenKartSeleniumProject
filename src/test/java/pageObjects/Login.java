@@ -54,6 +54,7 @@ public void performAction(Object...args) {
 			logger.info("Clicked on "+action);
 			break;
 		case "LOGOUT":
+			DriverUtility.flunetWaitForPageLoad(DriverUtility.getDriver(), loginBtnElement);
 			logoffBtnElement.clear();
 			logger.info("Clicked on "+action);
 			break;

@@ -1,12 +1,14 @@
 package testCases;
 
 import java.io.IOException;
+import java.util.HashMap;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import pageObjects.DriverUtility;
+import utilities.DataProviders;
 
 public class LoginTestCase {
 
@@ -16,7 +18,7 @@ public class LoginTestCase {
 		DriverUtility.getData();
 		DriverUtility.setBrowser();
 	}
-	@Test
+	//@Test
 	public void loginTest() {
 		pageObjects.Login obj;
 		
@@ -36,6 +38,28 @@ public class LoginTestCase {
 	}catch (Exception e) {	
 		e.printStackTrace();
 	}
+	}
+	@Test(dataProvider = "DataProviderForLogin", dataProviderClass = DataProviders.class)
+	public void LoginTest1(HashMap<String, String> dataMap) {
+		pageObjects.Login obj;
+		pageObjects.HomePage homePage;
+		try {
+			obj = DriverUtility.getpage(pageObjects.Login.class);
+			homePage = DriverUtility.getpage(pageObjects.HomePage.class);
+			
+			HashMap<String, Object> map = new HashMap<>();
+			
+			map.put("email", dataMap.get("Email"));
+			map.put("Password", dataMap.get("Password"));
+			
+			homePage.performAction("my account => login");
+			
+			obj.enterDetails(map);
+			
+			obj.performAction("login => my account => logout");
+		}catch (Exception e) {
+			
+		}
 	}
 	@AfterMethod(alwaysRun = true)
 	public void  breakDown() {

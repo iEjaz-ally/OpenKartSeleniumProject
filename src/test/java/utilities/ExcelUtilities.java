@@ -3,6 +3,9 @@ package utilities;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -43,8 +46,6 @@ public class ExcelUtilities {
 
 	public String getSheetName(int sheetNo) throws IOException {
 		setWorkBook();
-		
-
 		return getXSSFWorkbook().getSheetName(sheetNo);
 		}
 	public int getRowCount(String sheetName) throws IOException {
@@ -79,6 +80,25 @@ public class ExcelUtilities {
 	}
 	return dataString;
 	}
+
+public Map<String,String> readDataFromExcelForLogin(String sheetName, int rowNum, int cellNum){
+	 DataFormatter formatter = new DataFormatter();
+	 HashMap<String, String> data = new HashMap<>();
+	try{
+		setWorkBook();
+		sheet= getXSSFWorkbook().getSheet(sheetName);
+		XSSFRow headerRow = sheet.getRow(0);
+		XSSFRow row = sheet.getRow(rowNum);
+		XSSFCell headerCell = headerRow.getCell(cellNum);
+		XSSFCell celldataCell = row.getCell(cellNum);
+
+		data.put(headerCell.getStringCellValue(), celldataCell!=null? formatter.formatCellValue(celldataCell) : " "); 
+	}catch (Exception e) {
+		e.printStackTrace();
+	}
+	return data;
+}
+	
 	public void closeWorkBook() throws IOException {
 		getXSSFWorkbook().close();
 		workBook.remove();
