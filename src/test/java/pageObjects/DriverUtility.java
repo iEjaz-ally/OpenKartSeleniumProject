@@ -100,7 +100,7 @@ public static WebDriver initializeBrowser() throws IOException {
 			    options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
 
 			    System.setProperty("webdriver.http.factory", "jdk-http-client");
-			    System.setProperty("selenium.disable.devtools", "true"); // *** key fix ***
+			    System.setProperty("selenium.disable.devtools", "true");
 
 			    WebDriverManager.chromedriver().setup();
 			   driver = new ChromeDriver(options);
@@ -123,14 +123,11 @@ public static WebDriver initializeBrowser() throws IOException {
 			System.out.println(e.getMessage());
 			
 		}
-	//	getDriver().manage().deleteAllCookies();
 		return driver;
 		
 	}
 
 public static void setBrowser() {
-		switch (browserName.toUpperCase().replace(" ", "")) {
-		case "CHROME":
 		
 			try {
 				driver.set(initializeBrowser());
@@ -142,12 +139,8 @@ public static void setBrowser() {
 			    getDriver().get(urlString);
 			    getDriver().manage().deleteAllCookies();
 			    getDriver().manage().window().maximize();
-			break;
-
-		default:
-			break;
 		}
-	}
+	
 	public static WebDriver getDriver() {
 		return driver.get();
 	}
@@ -170,7 +163,6 @@ public static void setBrowser() {
 		wait.withTimeout(Duration.ofSeconds(300));
 		wait.pollingEvery(Duration.ofSeconds(5));
 		wait.ignoring(StaleElementReferenceException.class);
-	//	wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(""+xPath.trim()+"")));
 		
 		wait.until(ExpectedConditions.refreshed(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath))));
 		
