@@ -72,15 +72,6 @@ public class AccountRegistration {
 		for(String action : fields) {
 		try {
 		switch (action.replace(" ", "").toUpperCase()) {
-		case "MYACCOUNT":
-			DriverUtility.flunetWaitForPageLoad(DriverUtility.getDriver(), myAccountBtn);
-			myAccountBtn.click();
-			logger.info("Clicked on "+action);
-			break;
-		case "REGISTER":
-			registerButton.click();
-			logger.info("Clicked on "+ action);
-			break;
 		case "CONTINUE":
 			try {
 				continueBtnElement.click();
@@ -91,7 +82,6 @@ public class AccountRegistration {
 				DriverUtility.getDriver().findElement(By.xpath("//div/a[text()='Continue']")).click();
 				
 			}
-			
 			break;
 		case "PRIVACYPOLICY":
 			privacyPolicyCheckBoxElement.click();
@@ -114,12 +104,10 @@ public class AccountRegistration {
 		if(args[0] instanceof Map) {
 			fieldsMap = (Map<String, String>) args[0];
 		}else {
-			
+			for(String fieldsString : fieldsArrStrings ) {
+				String[] fieldString = fieldsString.split("=");
+				fieldsMap.put(fieldString[0], fieldString[1]);
 		}
-		
-		for(String fieldsString : fieldsArrStrings ) {
-			String[] fieldString = fieldsString.split("=");
-			fieldsMap.put(fieldString[0], fieldString[1]);
 		}
 		
 		for(Map.Entry<String, String> entry : fieldsMap.entrySet()) {
@@ -189,7 +177,6 @@ public class AccountRegistration {
 					
 				}
 				break;
-				
 			case "DUPLICATEREGISTRATION":
 				Assert.assertEquals("Warning: E-Mail Address is already registered!",
 						DriverUtility.getDriver().findElement(By.xpath("//div[contains(text(),'Warning')]")).getText(), " Messages don't match");
