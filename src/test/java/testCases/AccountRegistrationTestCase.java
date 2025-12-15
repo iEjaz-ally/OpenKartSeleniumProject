@@ -2,6 +2,7 @@ package testCases;
 
 import java.io.IOException;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -12,7 +13,7 @@ import pageObjects.DriverUtility;
 
 public class AccountRegistrationTestCase {
 
-	@BeforeMethod(alwaysRun = true)
+	@BeforeClass
 	public void setUp() throws IOException {
 		DriverUtility.getData();
 		DriverUtility.setBrowser();
@@ -58,7 +59,7 @@ public class AccountRegistrationTestCase {
 		
 		obj.verifymessages("Duplicate Registration");
 	}
-	@AfterMethod(alwaysRun = true)
+	@AfterClass(alwaysRun = true)
 	public void  breakDown() {
 		//DriverUtility.getDriver().close();
 		DriverUtility.getDriver().quit();

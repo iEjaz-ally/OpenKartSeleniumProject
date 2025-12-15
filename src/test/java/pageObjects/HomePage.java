@@ -9,7 +9,7 @@ import org.openqa.selenium.support.How;
 
 public class HomePage {
 
-Logger logger = LogManager.getLogger(AccountRegistration.class);
+Logger logger = LogManager.getLogger(HomePage.class);
 	
 	@FindBy(how=How.XPATH, using ="//ul/li/a[text()='Register']")
 	@CacheLookup

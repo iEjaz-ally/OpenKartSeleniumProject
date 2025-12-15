@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.testng.Assert;
 
 public class Login {
 	Logger logger = LogManager.getLogger(getClass());
@@ -54,8 +55,8 @@ public void performAction(Object...args) {
 			logger.info("Clicked on "+action);
 			break;
 		case "LOGOUT":
-			DriverUtility.flunetWaitForPageLoad(DriverUtility.getDriver(), loginBtnElement);
-			logoffBtnElement.clear();
+			DriverUtility.fluentWaitClick(DriverUtility.getDriver(), logoffBtnElement);
+			DriverUtility.getDriver().findElement(By.xpath("//ul/li/a[text()='Logout']")).click();
 			logger.info("Clicked on "+action);
 			break;
 		default:
@@ -67,7 +68,7 @@ public void performAction(Object...args) {
 		}
 		}
 	}
-public Login enterDetails(Object...args) {
+public void enterDetails(Object...args) {
 	
 	String[] fieldsArrStrings = args[0].toString().split("=>");
 	
@@ -97,12 +98,34 @@ public Login enterDetails(Object...args) {
 				logger.info("Field "+entry.getKey()+ " is not applicable");
 				throw new Exception();
 			}
-		
 	}catch (Exception e) {
 		logger.error("Could not enter into field "+e);
 		System.out.println("Could not enter into field "+e);
-	}	
+	}
 }
-	return this;
+	}
+public void verifyMessages(Object...args) {
+	String messageString = args[0].toString().trim();
+			try {
+				switch (messageString.toUpperCase().replace(" ", "")) {
+				case "VALID":
+					Assert.assertEquals("My Account", DriverUtility.getDriver().findElement(By.xpath("//div/h2[text()='My Account']")).getText());
+					break;
+				case "INVALIDPASSWORD":
+					Assert.assertEquals("Warning: No match for E-Mail Address and/or Password.", 
+							DriverUtility.getDriver().findElement(By.xpath("//div[contains(text(),'Warning')]")).getText());
+					break;
+				case "INVALIDEMAIL":
+					Assert.assertEquals("Warning: No match for E-Mail Address and/or Password.", 
+							DriverUtility.getDriver().findElement(By.xpath("//div[contains(text(),'Warning')]")).getText());
+					break;
+
+				default:
+					break;
+				}
+				
+			}catch (Exception e) {
+				// TODO: handle exception
+			}
 }
 }

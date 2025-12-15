@@ -3,17 +3,20 @@ package testCases;
 import java.io.IOException;
 import java.util.HashMap;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import pageObjects.DriverUtility;
+import pageObjects.Login;
 import utilities.DataProviders;
 
 public class LoginTestCase {
 
 	
-	@BeforeMethod(alwaysRun = true)
+	@BeforeClass
 	public void setUp() throws IOException {
 		DriverUtility.getData();
 		DriverUtility.setBrowser();
@@ -33,8 +36,6 @@ public class LoginTestCase {
 			obj.enterDetails("Email = johnny99009@abc.com => Password = !@#POa");
 			
 			obj.performAction("login => my account => logout");
-			
-		
 	}catch (Exception e) {	
 		e.printStackTrace();
 	}
@@ -50,18 +51,26 @@ public class LoginTestCase {
 			HashMap<String, Object> map = new HashMap<>();
 			
 			map.put("email", dataMap.get("Email"));
-			map.put("Password", dataMap.get("Password"));
+			map.put("Password", dataMap.get("Password"));			
 			
 			homePage.performAction("my account => login");
 			
 			obj.enterDetails(map);
+			obj.performAction("login");
 			
-			obj.performAction("login => my account => logout");
+			String expectedString = dataMap.get("Expected").toString();
+			System.out.println(expectedString+ " THis is");
+				if(expectedString.equalsIgnoreCase("Valid")) {
+					obj.verifyMessages("Valid");
+					obj.performAction("my account => logout");
+				}else {
+					obj.verifyMessages(expectedString);
+				}
 		}catch (Exception e) {
 			
 		}
 	}
-	@AfterMethod(alwaysRun = true)
+	@AfterClass
 	public void  breakDown() {
 		DriverUtility.getDriver().quit();
 	}

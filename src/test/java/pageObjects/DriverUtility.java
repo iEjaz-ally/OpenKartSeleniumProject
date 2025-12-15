@@ -137,7 +137,7 @@ public static void setBrowser() {
 			  getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 			    getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			    getDriver().get(urlString);
-			    getDriver().manage().deleteAllCookies();
+			  //  getDriver().manage().deleteAllCookies();
 			    getDriver().manage().window().maximize();
 		}
 	
@@ -165,6 +165,15 @@ public static void setBrowser() {
 		wait.ignoring(StaleElementReferenceException.class);
 		
 		wait.until(ExpectedConditions.refreshed(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath))));
+		
+	}
+	public static <T> void fluentWaitClick( WebDriver driver, WebElement ele){
+		FluentWait wait = new FluentWait(driver);
+		wait.withTimeout(Duration.ofSeconds(300));
+		wait.pollingEvery(Duration.ofSeconds(5));
+		wait.ignoring(StaleElementReferenceException.class);
+		
+		wait.until(ExpectedConditions.elementToBeClickable(ele));
 		
 	}
 }

@@ -1,32 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-11T17:47:58 IST" name="Default suite" finished-at="2025-12-11T17:48:28 IST" duration-ms="29723">
+  <suite started-at="2025-12-15T12:58:57 IST" name="Suite" finished-at="2025-12-15T13:00:22 IST" duration-ms="84846">
     <groups>
     </groups>
-    <test started-at="2025-12-11T17:47:58 IST" name="Default test" finished-at="2025-12-11T17:48:28 IST" duration-ms="29723">
+    <test started-at="2025-12-15T12:58:57 IST" name="tests-1" finished-at="2025-12-15T13:00:22 IST" duration-ms="84846">
       <class name="testCases.LoginTestCase">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.LoginTestCase@702657cc]" started-at="2025-12-11T17:48:03 IST" name="setUp" finished-at="2025-12-11T17:48:21 IST" duration-ms="18560" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.LoginTestCase@1ce24091]" started-at="2025-12-15T12:58:57 IST" name="setUp" finished-at="2025-12-15T12:59:38 IST" duration-ms="40770" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LoginTest1(java.util.HashMap)[pri:0, instance:testCases.LoginTestCase@702657cc]" started-at="2025-12-11T17:48:21 IST" name="LoginTest1" data-provider="DataProviderForLogin" finished-at="2025-12-11T17:48:27 IST" duration-ms="5177" status="PASS">
+        <test-method signature="LoginTest1(java.util.HashMap)[pri:0, instance:testCases.LoginTestCase@1ce24091]" started-at="2025-12-15T12:59:42 IST" name="LoginTest1" data-provider="DataProviderForLogin" finished-at="2025-12-15T12:59:50 IST" duration-ms="8305" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Email=johnny99009@abc.com, Password=!@#POa}]]>
+                <![CDATA[{Expected=Valid, Email=johnny99009@abc.com, Password=!@#POa}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest1 -->
-        <test-method is-config="true" signature="breakDown()[pri:0, instance:testCases.LoginTestCase@702657cc]" started-at="2025-12-11T17:48:27 IST" name="breakDown" finished-at="2025-12-11T17:48:28 IST" duration-ms="1090" status="PASS">
+        <test-method signature="LoginTest1(java.util.HashMap)[pri:0, instance:testCases.LoginTestCase@1ce24091]" started-at="2025-12-15T12:59:50 IST" name="LoginTest1" data-provider="DataProviderForLogin" finished-at="2025-12-15T12:59:55 IST" duration-ms="4881" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Expected=Invalid Password, Email=johnny99009@abc.com, Password=skhfvb}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest1 -->
+        <test-method signature="LoginTest1(java.util.HashMap)[pri:0, instance:testCases.LoginTestCase@1ce24091]" started-at="2025-12-15T12:59:55 IST" name="LoginTest1" data-provider="DataProviderForLogin" finished-at="2025-12-15T13:00:07 IST" duration-ms="12339" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Expected=Invalid Email, Email=sdh, Password=!@#POa}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest1 -->
+        <test-method signature="LoginTest1(java.util.HashMap)[pri:0, instance:testCases.LoginTestCase@1ce24091]" started-at="2025-12-15T13:00:07 IST" name="LoginTest1" data-provider="DataProviderForLogin" finished-at="2025-12-15T13:00:15 IST" duration-ms="7612" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Expected=Valid, Email=AlexJones123@abc.com, Password=1234567}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest1 -->
+        <test-method is-config="true" signature="breakDown()[pri:0, instance:testCases.LoginTestCase@1ce24091]" started-at="2025-12-15T13:00:15 IST" name="breakDown" finished-at="2025-12-15T13:00:22 IST" duration-ms="6734" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- breakDown -->
       </class> <!-- testCases.LoginTestCase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="testCases.AccountRegistrationTestCase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.AccountRegistrationTestCase@2d1ef81a]" started-at="2025-12-15T12:58:57 IST" name="setUp" finished-at="2025-12-15T12:59:26 IST" duration-ms="28375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registeringUser()[pri:0, instance:testCases.AccountRegistrationTestCase@2d1ef81a]" started-at="2025-12-15T12:59:26 IST" name="registeringUser" finished-at="2025-12-15T12:59:59 IST" duration-ms="33207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registeringUser -->
+        <test-method is-config="true" signature="breakDown()[pri:0, instance:testCases.AccountRegistrationTestCase@2d1ef81a]" started-at="2025-12-15T12:59:59 IST" name="breakDown" finished-at="2025-12-15T13:00:04 IST" duration-ms="4910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+      </class> <!-- testCases.AccountRegistrationTestCase -->
+    </test> <!-- tests-1 -->
+  </suite> <!-- Suite -->
 </testng-results>
