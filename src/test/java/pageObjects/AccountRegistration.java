@@ -16,6 +16,7 @@ import org.openqa.selenium.support.How;
 import org.testng.Assert;
 
 
+
 public class AccountRegistration {
 	Logger logger = LogManager.getLogger(AccountRegistration.class);
 	
@@ -64,7 +65,7 @@ public class AccountRegistration {
 	@CacheLookup
 	private List<WebElement> messageList;
 
-	public void performAction(Object...args) {
+	public AccountRegistration performAction(Object...args) {
 		
 		
 		String[] fields = args[0].toString().split("=>");
@@ -94,10 +95,12 @@ public class AccountRegistration {
 		}
 		}catch (Exception e) {
 			logger.error("Could not click on "+action+ " "+ e);
+			throw e;
 		}
 		}
+		return this;
 	}
-	public void enterDetails(Object...args) {
+	public AccountRegistration enterDetails(Object...args) {
 		String[] fieldsArrStrings = args[0].toString().split("=>");
 		
 		Map<String, String> fieldsMap = new LinkedHashMap<>();
@@ -154,11 +157,13 @@ public class AccountRegistration {
 			
 		}catch (Exception e) {
 			logger.error("Could not enter into field "+e);
-			System.out.println("Could not enter into field "+e);
+			throw e;
 		}
 		}
+		return this;
+		
 	}
-	public void verifymessages(Object...args) {
+	public AccountRegistration verifymessages(Object...args) {
 		String messageTypeString= args[0].toString().trim().toUpperCase();
 		int i=0;
 		try {
@@ -188,7 +193,9 @@ public class AccountRegistration {
 			}
 		}catch (Exception e) {
 			logger.error("Assert failed due to following Exception "+e);
+			throw e;
 		}
+		return this;
 	}
 
 }

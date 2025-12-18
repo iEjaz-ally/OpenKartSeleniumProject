@@ -2,9 +2,15 @@ package pageObjects;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,6 +19,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.ExcelUtilities;
 
@@ -98,6 +105,7 @@ public static WebDriver initializeBrowser() throws IOException {
 			    options.addArguments("--disable-infobars");
 			    options.addArguments("--disable-dev-shm-usage");
 			    options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+			    options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 
 			    System.setProperty("webdriver.http.factory", "jdk-http-client");
 			    System.setProperty("selenium.disable.devtools", "true");
@@ -124,7 +132,6 @@ public static WebDriver initializeBrowser() throws IOException {
 			
 		}
 		return driver;
-		
 	}
 
 public static void setBrowser() {
@@ -137,7 +144,7 @@ public static void setBrowser() {
 			  getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 			    getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			    getDriver().get(urlString);
-			  //  getDriver().manage().deleteAllCookies();
+			  getDriver().manage().deleteAllCookies();
 			    getDriver().manage().window().maximize();
 		}
 	
@@ -149,6 +156,14 @@ public static void setBrowser() {
 	
 		return PageFactory.initElements(getDriver(), class1);
 		
+	}
+	public static String takeScreenShot() {
+		String timestampString = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(new Date());
+	File screenShotFile =	((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.FILE);
+	String pathString = System.getProperty("user.dir")+File.separator+ "ScreenShots" + File.separator + "Failure_screenshot" +File.separator+ timestampString;
+	File targetFile = new File(pathString);
+	screenShotFile.renameTo(targetFile);
+	return pathString;
 	}
 	public static void flunetWaitForPageLoad(WebDriver driver, WebElement ele) {
 	Wait<WebDriver> wait = new FluentWait<>(driver)

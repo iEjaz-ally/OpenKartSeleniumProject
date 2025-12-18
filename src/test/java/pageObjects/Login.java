@@ -65,10 +65,11 @@ public void performAction(Object...args) {
 		}
 		}catch (Exception e) {
 			logger.error("Could not click on "+action+ " "+ e);
+			throw e;
 		}
 		}
 	}
-public void enterDetails(Object...args) {
+public void enterDetails(Object...args) throws Exception {
 	
 	String[] fieldsArrStrings = args[0].toString().split("=>");
 	
@@ -100,7 +101,7 @@ public void enterDetails(Object...args) {
 			}
 	}catch (Exception e) {
 		logger.error("Could not enter into field "+e);
-		System.out.println("Could not enter into field "+e);
+		throw e;
 	}
 }
 	}
@@ -125,7 +126,7 @@ public void verifyMessages(Object...args) {
 				}
 				
 			}catch (Exception e) {
-				// TODO: handle exception
+				throw e;
 			}
 }
 }

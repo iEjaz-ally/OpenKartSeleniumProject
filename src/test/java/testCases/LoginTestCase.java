@@ -59,9 +59,8 @@ public class LoginTestCase {
 			obj.performAction("login");
 			
 			String expectedString = dataMap.get("Expected").toString();
-			System.out.println(expectedString+ " THis is");
 				if(expectedString.equalsIgnoreCase("Valid")) {
-					obj.verifyMessages("Valid");
+					obj.verifyMessages(expectedString);
 					obj.performAction("my account => logout");
 				}else {
 					obj.verifyMessages(expectedString);

@@ -51,6 +51,7 @@ public void performAction(Object...args) {
 		}
 		}catch (Exception e) {
 			logger.error("Could not click on "+action+ " "+ e);
+			throw e;
 		}
 		}
 	}
