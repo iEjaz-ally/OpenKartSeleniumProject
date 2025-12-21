@@ -78,7 +78,6 @@ public class AccountRegistration {
 				continueBtnElement.click();
 			logger.info("Clicked on "+ action);
 			}catch (Exception e) {
-				// TODO: handle exception
 			//	DriverUtility.fluentWait(DriverUtility.getDriver(), "//div/a[text()='Continue']");
 				DriverUtility.getDriver().findElement(By.xpath("//div/a[text()='Continue']")).click();
 				
@@ -161,7 +160,6 @@ public class AccountRegistration {
 		}
 		}
 		return this;
-		
 	}
 	public AccountRegistration verifymessages(Object...args) {
 		String messageTypeString= args[0].toString().trim().toUpperCase();
@@ -178,8 +176,7 @@ public class AccountRegistration {
 						DriverUtility.getDriver().findElement(By.xpath("//div/h1[contains(text(),'Your Account')]")).getText());
 				for(WebElement element : messageList) {
 					Assert.assertEquals(messArrayList.get(i++),
-							element.getText());
-					
+							element.getText());	
 				}
 				break;
 			case "DUPLICATEREGISTRATION":

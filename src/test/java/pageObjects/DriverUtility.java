@@ -2,6 +2,7 @@ package pageObjects;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -9,12 +10,15 @@ import java.util.Date;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.PageLoadStrategy;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -32,15 +36,27 @@ public class DriverUtility {
 	static String browserName;
 	
 	static String urlString;
+	
+	static String executionEnv;
+	
+	static String platformString;
 
 	
 	public static void getData() throws IOException
 	{
 utilities = new ExcelUtilities(System.getProperty("user.dir")+ File.separator + "testData" + File.separator + "testData.xlsx");
 		
-		browserName = utilities.getCellData(utilities.getSheetName(0), 1, 1);
+	String sheetNameString = utilities.getSheetName(0);
+		browserName = utilities.getCellData(sheetNameString, 1, 1);
 		
-		urlString = utilities.getCellData(utilities.getSheetName(0), 0,1);
+		urlString = utilities.getCellData(sheetNameString, 0,1);
+		
+		executionEnv = utilities.getCellData(sheetNameString, 4, 1);
+		
+		platformString = utilities.getCellData(sheetNameString, 5, 1);
+		
+		System.out.println("environment" + executionEnv + " "+ platformString);
+		
 		utilities.closeWorkBook();
 	}
 	/*public static void initializeBrowser() throws IOException {
@@ -95,6 +111,19 @@ utilities = new ExcelUtilities(System.getProperty("user.dir")+ File.separator + 
 public static WebDriver initializeBrowser() throws IOException {
 		
 	WebDriver driver = null;
+	
+	if(executionEnv.equalsIgnoreCase("Remote")) {
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		
+		capabilities.setPlatform(platformString.equalsIgnoreCase("Windows") ? Platform.WIN11 : Platform.MAC);
+		
+		capabilities.setBrowserName(browserName.equalsIgnoreCase("Chrome") ? "chrome" : "edge");
+		
+		driver = new RemoteWebDriver(new URL("http://localhost:4444"), capabilities);
+		
+		return driver;
+		}
+	
 		try{
 			switch(browserName.replace(" ", "").toUpperCase()) {
 	
