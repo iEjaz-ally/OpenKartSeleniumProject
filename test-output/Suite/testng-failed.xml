@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="2" parallel="classes" name="tests-1(failed)">
     <classes>
-      <class name="testCases.AccountRegistrationTestCase">
+      <class name="testCases.LoginTestCase">
         <methods>
-          <include name="registeringUser"/>
+          <include name="LoginTest1"/>
           <include name="setUp"/>
           <include name="breakDown"/>
         </methods>
-      </class> <!-- testCases.AccountRegistrationTestCase -->
+      </class> <!-- testCases.LoginTestCase -->
     </classes>
   </test> <!-- tests-1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

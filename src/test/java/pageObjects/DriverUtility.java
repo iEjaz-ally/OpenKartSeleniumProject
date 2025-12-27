@@ -53,10 +53,7 @@ utilities = new ExcelUtilities(System.getProperty("user.dir")+ File.separator + 
 		
 		executionEnv = utilities.getCellData(sheetNameString, 4, 1);
 		
-		platformString = utilities.getCellData(sheetNameString, 5, 1);
-		
-		System.out.println("environment" + executionEnv + " "+ platformString);
-		
+		platformString = utilities.getCellData(sheetNameString, 5, 1);	
 		utilities.closeWorkBook();
 	}
 	/*public static void initializeBrowser() throws IOException {
@@ -107,7 +104,6 @@ utilities = new ExcelUtilities(System.getProperty("user.dir")+ File.separator + 
 	//	getDriver().manage().deleteAllCookies();
 		
 	}*/
-	
 public static WebDriver initializeBrowser() throws IOException {
 		
 	WebDriver driver = null;
@@ -115,11 +111,11 @@ public static WebDriver initializeBrowser() throws IOException {
 	if(executionEnv.equalsIgnoreCase("Remote")) {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		
-		capabilities.setPlatform(platformString.equalsIgnoreCase("Windows") ? Platform.WIN11 : Platform.MAC);
+		capabilities.setPlatform(platformString.equalsIgnoreCase("Windows") ? Platform.WIN11 : Platform.LINUX);	
 		
 		capabilities.setBrowserName(browserName.equalsIgnoreCase("Chrome") ? "chrome" : "edge");
 		
-		driver = new RemoteWebDriver(new URL("http://localhost:4444"), capabilities);
+		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 		
 		return driver;
 		}
@@ -171,10 +167,10 @@ public static void setBrowser() {
 				e.printStackTrace();
 			}
 			  getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
-			    getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			    getDriver().get(urlString);
+			  getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			  getDriver().get(urlString);
 			  getDriver().manage().deleteAllCookies();
-			    getDriver().manage().window().maximize();
+			  getDriver().manage().window().maximize();
 		}
 	
 	public static WebDriver getDriver() {

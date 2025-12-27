@@ -44,7 +44,6 @@ public void performAction(Object...args) {
 			loginButton.click();
 			logger.info("Clicked on "+ action);
 			break;
-			
 		default:
 			logger.info("Action "+action+ " is not applicable");
 			break;

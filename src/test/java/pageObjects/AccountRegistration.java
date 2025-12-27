@@ -78,16 +78,13 @@ public class AccountRegistration {
 				continueBtnElement.click();
 			logger.info("Clicked on "+ action);
 			}catch (Exception e) {
-			//	DriverUtility.fluentWait(DriverUtility.getDriver(), "//div/a[text()='Continue']");
 				DriverUtility.getDriver().findElement(By.xpath("//div/a[text()='Continue']")).click();
-				
 			}
 			break;
 		case "PRIVACYPOLICY":
 			privacyPolicyCheckBoxElement.click();
 			logger.info("Clicked on "+ action);
 			break;
-			
 		default:
 			logger.info("Action "+action+ " is not applicable");
 			break;
@@ -137,7 +134,6 @@ public class AccountRegistration {
 				passwordFieldElement.sendKeys(entry.getValue().trim());
 				logger.info("Entered value"+entry.getValue().trim()+ " in field "+entry.getKey());
 				break;
-				
 			case "PASSWORDCONFIRM":
 				confirmPasswordFieldElement.sendKeys(entry.getValue().trim());
 				logger.info("Entered value"+entry.getValue().trim()+ " in field "+entry.getKey());
@@ -147,13 +143,11 @@ public class AccountRegistration {
 				findElement(By.xpath("//fieldset/descendant::label[@class='radio-inline' and text()='"+entry.getValue().trim()+"']")).click();
 				logger.info("Selected "+entry.getValue().trim()+ " for "+entry.getKey());
 				break;
-				
 			default:
 				logger.info("Field "+entry.getKey()+ " is not applicable");
 				System.out.println("Field "+entry.getKey()+ " is not applicable");
 				break;
-			}
-			
+			}	
 		}catch (Exception e) {
 			logger.error("Could not enter into field "+e);
 			throw e;

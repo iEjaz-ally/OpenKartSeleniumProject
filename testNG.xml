@@ -8,7 +8,7 @@
 
   <test name="tests-1">
     <classes>
-      <class name="testCases.AccountRegistrationTestCase"/>
+      <class name="testCases.LoginTestCase"/>
     </classes>
   </test>
   <!--<test name="tests-2">

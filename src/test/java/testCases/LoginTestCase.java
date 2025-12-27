@@ -62,7 +62,8 @@ public class LoginTestCase {
 				if(expectedString.equalsIgnoreCase("Valid")) {
 					obj.verifyMessages(expectedString);
 					obj.performAction("my account => logout");
-				}else {
+				}
+				else {
 					obj.verifyMessages(expectedString);
 				}
 		}catch (Exception e) {
