@@ -1,4 +1,9 @@
 C:\eclipse projects\NewAutomation\OpenKartSeleniumProject\src\test\java\pageObjects\AccountRegistration.java
 C:\eclipse projects\NewAutomation\OpenKartSeleniumProject\src\test\java\pageObjects\DriverUtility.java
+C:\eclipse projects\NewAutomation\OpenKartSeleniumProject\src\test\java\pageObjects\HomePage.java
+C:\eclipse projects\NewAutomation\OpenKartSeleniumProject\src\test\java\pageObjects\Login.java
 C:\eclipse projects\NewAutomation\OpenKartSeleniumProject\src\test\java\testCases\AccountRegistrationTestCase.java
+C:\eclipse projects\NewAutomation\OpenKartSeleniumProject\src\test\java\testCases\LoginTestCase.java
+C:\eclipse projects\NewAutomation\OpenKartSeleniumProject\src\test\java\utilities\DataProviders.java
 C:\eclipse projects\NewAutomation\OpenKartSeleniumProject\src\test\java\utilities\ExcelUtilities.java
+C:\eclipse projects\NewAutomation\OpenKartSeleniumProject\src\test\java\utilities\ExtentReportsManager.java
