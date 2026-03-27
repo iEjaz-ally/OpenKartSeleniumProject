@@ -9,6 +9,7 @@
   <test name="tests-1">
     <classes>
       <class name="testCases.LoginTestCase"/>
+      <class name="testCases.AccountRegistrationTestCase"/>
     </classes>
   </test>
   <!--<test name="tests-2">

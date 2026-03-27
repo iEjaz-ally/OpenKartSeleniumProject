@@ -11,7 +11,7 @@ import org.testng.annotations.DataProvider;
 public class DataProviders {
 	
 	@DataProvider(name="DataProviderForLogin")
-	public Iterator<Object[]> getDataForPets() throws IOException{
+	public Iterator<Object[]> getData() throws IOException{
 		String filePathString = System.getProperty("user.dir")+ File.separator + "testData" + File.separator + "testData.xlsx";
 			ExcelUtilities utilities = new ExcelUtilities(filePathString);
 			int rowCount =  utilities.getRowCount(utilities.getSheetName(1));

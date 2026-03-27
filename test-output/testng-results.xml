@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-25T21:01:54 IST" name="Default suite" finished-at="2025-12-25T21:05:59 IST" duration-ms="244910">
+  <suite started-at="2026-03-27T11:00:06 IST" name="Suite" finished-at="2026-03-27T11:02:20 IST" duration-ms="134385">
     <groups>
     </groups>
-    <test started-at="2025-12-25T21:01:54 IST" name="Default test" finished-at="2025-12-25T21:05:59 IST" duration-ms="244910">
+    <test started-at="2026-03-27T11:00:06 IST" name="tests-1" finished-at="2026-03-27T11:02:20 IST" duration-ms="134385">
       <class name="testCases.LoginTestCase">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.LoginTestCase@4b2bac3f]" started-at="2025-12-25T21:01:54 IST" name="setUp" finished-at="2025-12-25T21:04:55 IST" duration-ms="180242" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.LoginTestCase@40005471]" started-at="2026-03-27T11:00:07 IST" name="setUp" finished-at="2026-03-27T11:01:09 IST" duration-ms="62787" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LoginTest1(java.util.HashMap)[pri:0, instance:testCases.LoginTestCase@4b2bac3f]" started-at="2025-12-25T21:05:03 IST" name="LoginTest1" data-provider="DataProviderForLogin" finished-at="2025-12-25T21:05:25 IST" duration-ms="21097" status="PASS">
+        <test-method signature="LoginTest1(java.util.HashMap)[pri:0, instance:testCases.LoginTestCase@40005471]" started-at="2026-03-27T11:01:22 IST" name="LoginTest1" data-provider="DataProviderForLogin" finished-at="2026-03-27T11:01:32 IST" duration-ms="9887" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest1 -->
-        <test-method signature="LoginTest1(java.util.HashMap)[pri:0, instance:testCases.LoginTestCase@4b2bac3f]" started-at="2025-12-25T21:05:26 IST" name="LoginTest1" data-provider="DataProviderForLogin" finished-at="2025-12-25T21:05:38 IST" duration-ms="12807" status="PASS">
+        <test-method signature="LoginTest1(java.util.HashMap)[pri:0, instance:testCases.LoginTestCase@40005471]" started-at="2026-03-27T11:01:32 IST" name="LoginTest1" data-provider="DataProviderForLogin" finished-at="2026-03-27T11:01:38 IST" duration-ms="6384" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest1 -->
-        <test-method signature="LoginTest1(java.util.HashMap)[pri:0, instance:testCases.LoginTestCase@4b2bac3f]" started-at="2025-12-25T21:05:38 IST" name="LoginTest1" data-provider="DataProviderForLogin" finished-at="2025-12-25T21:05:45 IST" duration-ms="6748" status="PASS">
+        <test-method signature="LoginTest1(java.util.HashMap)[pri:0, instance:testCases.LoginTestCase@40005471]" started-at="2026-03-27T11:01:38 IST" name="LoginTest1" data-provider="DataProviderForLogin" finished-at="2026-03-27T11:01:42 IST" duration-ms="3414" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest1 -->
-        <test-method signature="LoginTest1(java.util.HashMap)[pri:0, instance:testCases.LoginTestCase@4b2bac3f]" started-at="2025-12-25T21:05:45 IST" name="LoginTest1" data-provider="DataProviderForLogin" finished-at="2025-12-25T21:05:57 IST" duration-ms="12185" status="PASS">
+        <test-method signature="LoginTest1(java.util.HashMap)[pri:0, instance:testCases.LoginTestCase@40005471]" started-at="2026-03-27T11:01:42 IST" name="LoginTest1" data-provider="DataProviderForLogin" finished-at="2026-03-27T11:01:48 IST" duration-ms="6859" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -55,11 +55,82 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest1 -->
-        <test-method is-config="true" signature="breakDown()[pri:0, instance:testCases.LoginTestCase@4b2bac3f]" started-at="2025-12-25T21:05:58 IST" name="breakDown" finished-at="2025-12-25T21:05:59 IST" duration-ms="1610" status="PASS">
+        <test-method is-config="true" signature="breakDown()[pri:0, instance:testCases.LoginTestCase@40005471]" started-at="2026-03-27T11:01:48 IST" name="breakDown" finished-at="2026-03-27T11:02:20 IST" duration-ms="31595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- breakDown -->
       </class> <!-- testCases.LoginTestCase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="testCases.AccountRegistrationTestCase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.AccountRegistrationTestCase@2c532cd8]" started-at="2026-03-27T11:00:07 IST" name="setUp" finished-at="2026-03-27T11:01:07 IST" duration-ms="60642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registeringUser()[pri:0, instance:testCases.AccountRegistrationTestCase@2c532cd8]" started-at="2026-03-27T11:01:09 IST" name="registeringUser" finished-at="2026-03-27T11:01:31 IST" duration-ms="22819" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div/h1[contains(text(),'Your Account')]"}
+  (Session info: chrome=146.0.7680.154)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c9bdbd1f7477ac34d88d59cbddd93ef, findElement {value=//div/h1[contains(text(),'Your Account')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\ejazh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60818}, goog:processID: 22884, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60818/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c9bdbd1f7477ac34d88d59cbddd93ef]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div/h1[contains(text(),'Your Account')]"}
+  (Session info: chrome=146.0.7680.154)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c9bdbd1f7477ac34d88d59cbddd93ef, findElement {value=//div/h1[contains(text(),'Your Account')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\ejazh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60818}, goog:processID: 22884, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60818/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c9bdbd1f7477ac34d88d59cbddd93ef
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at pageObjects.AccountRegistration.verifymessages(AccountRegistration.java:170)
+at testCases.AccountRegistrationTestCase.registeringUser(AccountRegistrationTestCase.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registeringUser -->
+        <test-method is-config="true" signature="breakDown()[pri:0, instance:testCases.AccountRegistrationTestCase@2c532cd8]" started-at="2026-03-27T11:01:32 IST" name="breakDown" finished-at="2026-03-27T11:02:03 IST" duration-ms="31346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- breakDown -->
+      </class> <!-- testCases.AccountRegistrationTestCase -->
+    </test> <!-- tests-1 -->
+  </suite> <!-- Suite -->
 </testng-results>
