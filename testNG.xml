@@ -3,8 +3,7 @@
 <suite name="Suite" thread-count="2">
 
 <listeners>
-<listener class-name = "utilities.ExtentReportsManager"/>
-<listener class-name="">"utilities.RetryAnalyzer"</listener>
+<listener class-name="utilities.ExtentReportsManager"></listener>
 </listeners>
 
   <test name="tests-1">

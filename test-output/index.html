@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\eclipse projects\NewAutomation\OpenKartSeleniumProject\testng.xml</span>
+                    <span>C:\Users\ejazh\git\OpenKartSeleniumProject\testNG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,50 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.AccountRegistrationTestCase" class="method navigator-link" hash-for-method="registeringUser">registeringUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTestCase" class="method navigator-link" hash-for-method="LoginTest1({Expected=Valid, Email=johnny99009@abc.com, Password=!@#POa})">LoginTest1({Expected=Valid, Email=johnny99009@abc.com, Password=!@#POa})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTestCase" class="method navigator-link" hash-for-method="LoginTest1({Expected=Invalid Password, Email=johnny99009@abc.com, Password=skhfvb})">LoginTest1({Expected=Invalid Password, Email=johnny99009@abc.com, Password=skhfvb})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTestCase" class="method navigator-link" hash-for-method="LoginTest1({Expected=Invalid Email, Email=sdh, Password=!@#POa})">LoginTest1({Expected=Invalid Email, Email=sdh, Password=!@#POa})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.LoginTestCase" class="method navigator-link" hash-for-method="LoginTest1({Expected=Valid, Email=AlexJones123@abc.com, Password=1234567})">LoginTest1({Expected=Valid, Email=AlexJones123@abc.com, Password=1234567})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -147,9 +118,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">testCases.AccountRegistrationTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -158,15 +129,15 @@
                   <a name="registeringUser">
                   </a> <!-- registeringUser -->
                   <span class="method-name">registeringUser</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div/h1[contains(text(),&apos;Your Account&apos;)]&quot;}
-  (Session info: chrome=146.0.7680.154)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=150.0.7871.182)
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1c9bdbd1f7477ac34d88d59cbddd93ef, findElement {value=//div/h1[contains(text(),&apos;Your Account&apos;)], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\ejazh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60818}, goog:processID: 22884, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60818/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1c9bdbd1f7477ac34d88d59cbddd93ef
+Command: [257475f0ea536514d0e62e6e295d1c48, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.182, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\ejazh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56695}, goog:processID: 28824, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56695/devtoo..., se:cdpVersion: 150.0.7871.182, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 257475f0ea536514d0e62e6e295d1c48
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -174,79 +145,33 @@ Session ID: 1c9bdbd1f7477ac34d88d59cbddd93ef
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at pageObjects.AccountRegistration.verifymessages(AccountRegistration.java:170)
-	at testCases.AccountRegistrationTestCase.registeringUser(AccountRegistrationTestCase.java:39)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 14 stack frames
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:634)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:906)
+	at pageObjects.DriverUtility.setBrowser(DriverUtility.java:199)
+	at testCases.AccountRegistrationTestCase.setUp(AccountRegistrationTestCase.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCases.LoginTestCase</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginTest1({Expected=Valid, Email=johnny99009@abc.com, Password=!@#POa})">
-                  </a> <!-- LoginTest1({Expected=Valid, Email=johnny99009@abc.com, Password=!@#POa}) -->
-                  <span class="method-name">LoginTest1</span>
-                  <span class="parameters">({Expected=Valid, Email=johnny99009@abc.com, Password=!@#POa})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginTest1({Expected=Invalid Password, Email=johnny99009@abc.com, Password=skhfvb})">
-                  </a> <!-- LoginTest1({Expected=Invalid Password, Email=johnny99009@abc.com, Password=skhfvb}) -->
-                  <span class="method-name">LoginTest1</span>
-                  <span class="parameters">({Expected=Invalid Password, Email=johnny99009@abc.com, Password=skhfvb})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginTest1({Expected=Invalid Email, Email=sdh, Password=!@#POa})">
-                  </a> <!-- LoginTest1({Expected=Invalid Email, Email=sdh, Password=!@#POa}) -->
-                  <span class="method-name">LoginTest1</span>
-                  <span class="parameters">({Expected=Invalid Email, Email=sdh, Password=!@#POa})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginTest1({Expected=Valid, Email=AlexJones123@abc.com, Password=1234567})">
-                  </a> <!-- LoginTest1({Expected=Valid, Email=AlexJones123@abc.com, Password=1234567}) -->
-                  <span class="method-name">LoginTest1</span>
-                  <span class="parameters">({Expected=Valid, Email=AlexJones123@abc.com, Password=1234567})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\eclipse projects\NewAutomation\OpenKartSeleniumProject\testng.xml</span>
+            <span class="header-content">C:\Users\ejazh\git\OpenKartSeleniumProject\testNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;utilities.ExtentReportsManager&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;tests-1&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;tests-1&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.LoginTestCase&quot;/&gt;
       &lt;class name=&quot;testCases.AccountRegistrationTestCase&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- tests-1 --&gt;
@@ -261,7 +186,7 @@ Session ID: 1c9bdbd1f7477ac34d88d59cbddd93ef
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">tests-1 (2 classes)</span>
+                <span class="test-name">tests-1 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -287,32 +212,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'registeringUser')
 data.setCell(0, 2, 'testCases.AccountRegistrationTestCase')
-data.setCell(0, 3, 22819);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LoginTest1')
-data.setCell(1, 2, 'testCases.LoginTestCase')
-data.setCell(1, 3, 9887);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'LoginTest1')
-data.setCell(2, 2, 'testCases.LoginTestCase')
-data.setCell(2, 3, 6859);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'LoginTest1')
-data.setCell(3, 2, 'testCases.LoginTestCase')
-data.setCell(3, 3, 6384);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'LoginTest1')
-data.setCell(4, 2, 'testCases.LoginTestCase')
-data.setCell(4, 3, 3414);
+data.setCell(0, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 49 seconds</span>
+              <span class="suite-total-time">Total running time: 1 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -338,56 +247,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.LoginTestCase</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.AccountRegistrationTestCase</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.AccountRegistrationTestCase</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">3 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">registeringUser</span>
-                <span class="method-start">61881 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.LoginTestCase</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">LoginTest1({Expected=Valid, Email=johnny99009@abc.com, Password=!@#POa})</span>
-                <span class="method-start">75169 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">LoginTest1({Expected=Invalid Password, Email=johnny99009@abc.com, Password=skhfvb})</span>
-                <span class="method-start">85149 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.AccountRegistrationTestCase</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">breakDown</span>
-                <span class="method-start">85307 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.LoginTestCase</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">LoginTest1({Expected=Invalid Email, Email=sdh, Password=!@#POa})</span>
-                <span class="method-start">91539 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">LoginTest1({Expected=Valid, Email=AlexJones123@abc.com, Password=1234567})</span>
-                <span class="method-start">94965 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">breakDown</span>
-                <span class="method-start">101865 ms</span>
+                <span class="method-start">3099 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
