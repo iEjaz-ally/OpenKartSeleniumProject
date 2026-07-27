@@ -24,6 +24,7 @@ public class AccountRegistrationTestCase {
 	@Test(retryAnalyzer =utilities.RetryAnalyzer.class)
 	public void registeringUser() {
 		
+		System.out.println(System.getProperty("browser")+ " this is browser" );
 		pageObjects.AccountRegistration obj;
 		
 		pageObjects.HomePage homePage;

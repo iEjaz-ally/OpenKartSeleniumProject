@@ -12,8 +12,11 @@
           <version>3.5.4</version>
            <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
+            <suiteXmlFile>${testNG}</suiteXmlFile>
             </suiteXmlFiles>
+            <systemPropertyVariables>
+            <browser>${browser}</browser>
+            </systemPropertyVariables>
           </configuration>
         </plugin>
       	<plugin>

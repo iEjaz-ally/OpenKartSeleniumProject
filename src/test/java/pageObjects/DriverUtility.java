@@ -24,6 +24,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -174,6 +175,7 @@ public static WebDriver initializeBrowser() throws IOException {
 
 		case "EDGE":
 			WebDriverManager.edgedriver().setup();	
+			driver = new EdgeDriver();
 		break;
 		default:
 			throw new Exception("Browser couldn't be initilized");

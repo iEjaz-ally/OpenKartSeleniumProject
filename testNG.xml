@@ -5,7 +5,6 @@
 <listeners>
 <listener class-name="utilities.ExtentReportsManager"></listener>
 </listeners>
-
   <test name="tests-1">
     <classes>
       <class name="testCases.AccountRegistrationTestCase"/>
