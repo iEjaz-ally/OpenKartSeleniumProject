@@ -2,23 +2,26 @@ package testCases;
 
 import java.io.IOException;
 
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import pageObjects.DriverUtility;
+import pageObjects.HomePage;
 
+@Listeners
 public class AccountRegistrationTestCase {
 	Logger logger = LogManager.getLogger(AccountRegistrationTestCase.class);
+
 	@BeforeClass
 	public void setUp() throws IOException {
-		DriverUtility.getData();
+		//DriverUtility.getData();
 		DriverUtility.setBrowser();
 	}
-	@Test
+	@Test(retryAnalyzer =utilities.RetryAnalyzer.class)
 	public void registeringUser() {
 		
 		pageObjects.AccountRegistration obj;
@@ -26,7 +29,7 @@ public class AccountRegistrationTestCase {
 		pageObjects.HomePage homePage;
 		try {
 			obj = DriverUtility.getpage(pageObjects.AccountRegistration.class);
-			homePage= DriverUtility.getpage(pageObjects.HomePage.class);
+			homePage= DriverUtility.getpage(HomePage.class);
 			
 			homePage.performAction("My Account => Register");
 			

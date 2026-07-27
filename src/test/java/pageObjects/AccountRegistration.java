@@ -15,8 +15,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.testng.Assert;
 
-
-
 public class AccountRegistration {
 	Logger logger = LogManager.getLogger(AccountRegistration.class);
 	

@@ -3,9 +3,16 @@ package pageObjects;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
+import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -40,22 +47,41 @@ public class DriverUtility {
 	static String executionEnv;
 	
 	static String platformString;
-
 	
-	public static void getData() throws IOException
-	{
-utilities = new ExcelUtilities(System.getProperty("user.dir")+ File.separator + "testData" + File.separator + "testData.xlsx");
+	static {
 		
-	String sheetNameString = utilities.getSheetName(0);
+	try {
+		utilities = new ExcelUtilities(System.getProperty("user.dir")+ File.separator + "testData" + File.separator + "testData.xlsx");
+		String sheetNameString = utilities.getSheetName(0);
 		browserName = utilities.getCellData(sheetNameString, 1, 1);
 		
-		urlString = utilities.getCellData(sheetNameString, 0,1);
-		
+	urlString = utilities.getCellData(sheetNameString, 0,1);
+	
 		executionEnv = utilities.getCellData(sheetNameString, 4, 1);
 		
-		platformString = utilities.getCellData(sheetNameString, 5, 1);	
-		utilities.closeWorkBook();
+	platformString = utilities.getCellData(sheetNameString, 5, 1);	
+	utilities.closeWorkBook();
 	}
+	catch (Exception e) {
+		// TODO: handle exception	
+	}
+	}
+
+	
+//	public static void getData() throws IOException
+//	{
+//utilities = new ExcelUtilities(System.getProperty("user.dir")+ File.separator + "testData" + File.separator + "testData.xlsx");
+//		
+//	String sheetNameString = utilities.getSheetName(0);
+//		browserName = utilities.getCellData(sheetNameString, 1, 1);
+//		
+//		urlString = utilities.getCellData(sheetNameString, 0,1);
+//		
+//		executionEnv = utilities.getCellData(sheetNameString, 4, 1);
+//		
+//		platformString = utilities.getCellData(sheetNameString, 5, 1);	
+//		utilities.closeWorkBook();
+//	}
 	/*public static void initializeBrowser() throws IOException {
 		
 		utilities = new ExcelUtilities(System.getProperty("user.dir")+ File.separator + "testData" + File.separator + "testData.xlsx");
@@ -131,6 +157,7 @@ public static WebDriver initializeBrowser() throws IOException {
 			    options.addArguments("--disable-dev-shm-usage");
 			    options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
 			    options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+			   
 
 			    System.setProperty("webdriver.http.factory", "jdk-http-client");
 			    System.setProperty("selenium.disable.devtools", "true");
@@ -177,6 +204,12 @@ public static void setBrowser() {
 		return driver.get();
 	}
 	
+	public static void quitDriver() {
+		
+		getDriver().quit();
+		driver.remove();
+	}
+	
 	public static <T> T getpage(Class<T> class1) throws IOException  {
 	
 		return PageFactory.initElements(getDriver(), class1);
@@ -198,10 +231,10 @@ public static void setBrowser() {
 	
 	wait.until(ExpectedConditions.visibilityOf(ele));
 	}
-	public static <T> void fluentWait( WebDriver driver, String xpath){
+	public static void fluentWait( WebDriver driver, String xpath){
 		FluentWait wait = new FluentWait(driver);
 		wait.withTimeout(Duration.ofSeconds(300));
-		wait.pollingEvery(Duration.ofSeconds(5));
+		wait.pollingEvery(Duration.ofSeconds(5)); 
 		wait.ignoring(StaleElementReferenceException.class);
 		
 		wait.until(ExpectedConditions.refreshed(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath))));
@@ -214,6 +247,34 @@ public static void setBrowser() {
 		wait.ignoring(StaleElementReferenceException.class);
 		
 		wait.until(ExpectedConditions.elementToBeClickable(ele));
+		
+		
+	}
+	public void getData() throws SQLException {
+		
+		Connection connection = DriverManager.getConnection(urlString," ","");
+		
+		PreparedStatement statement = connection.prepareStatement("select * from abc");
+		
+		
+		ResultSet rSet = statement.executeQuery();
+		
+		ResultSetMetaData metaData = rSet.getMetaData();
+		
+		int columnCount = metaData.getColumnCount();
+		
+		while(rSet.next()) {
+			
+			for(int i =0;i<columnCount;i++) {
+				
+				Object columnName = metaData.getColumnName(i);
+				
+				Object colummnValue = rSet.getObject(i);
+				
+				
+			}
+		}
+		
 		
 	}
 }

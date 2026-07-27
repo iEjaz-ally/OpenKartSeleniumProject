@@ -3,6 +3,7 @@ package utilities;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -26,18 +27,20 @@ public class ExcelUtilities {
 		
 	}
 	public void setWorkBook() throws IOException {
+		if(workBook.get()==null) {
 		FileInputStream	inputStream = new FileInputStream(filePathString);
 		try {
+			
 			inputStream = new FileInputStream(filePathString);
 			XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 			
 			workBook.set(workbook);
+		
 		} catch (FileNotFoundException e) {
 			
 			e.printStackTrace();
 		}
-		inputStream.close();
-		
+		}
 	}
 	
 	public XSSFWorkbook getXSSFWorkbook() {
@@ -102,6 +105,7 @@ public Map<String,String> readDataFromExcelForLogin(String sheetName, int rowNum
 	public void closeWorkBook() throws IOException {
 		getXSSFWorkbook().close();
 		workBook.remove();
+		
 	}
 }
 

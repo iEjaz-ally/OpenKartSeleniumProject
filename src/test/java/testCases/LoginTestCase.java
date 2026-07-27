@@ -18,7 +18,7 @@ public class LoginTestCase {
 	
 	@BeforeClass
 	public void setUp() throws IOException {
-		DriverUtility.getData();
+	//	DriverUtility.getData();
 		DriverUtility.setBrowser();
 	}
 	//@Test
