@@ -24,7 +24,7 @@ public class AccountRegistrationTestCase {
 	@Test(retryAnalyzer =utilities.RetryAnalyzer.class)
 	public void registeringUser() {
 		
-		System.out.println(System.getProperty("browser")+ " this is browser" );
+		System.out.println(System.getProperty("browser")+ " this is browser. Just added a webhook" );
 		pageObjects.AccountRegistration obj;
 		
 		pageObjects.HomePage homePage;
