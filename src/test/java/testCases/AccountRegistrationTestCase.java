@@ -23,8 +23,7 @@ public class AccountRegistrationTestCase {
 	}
 	@Test(retryAnalyzer =utilities.RetryAnalyzer.class)
 	public void registeringUser() {
-		
-		System.out.println(System.getProperty("browser")+ " this is browser. Just added a webhook with ngrok running" );
+		System.out.println(System.getProperty("browser")+ " this is browser. Just added a webhook and using SCM polling" );
 		pageObjects.AccountRegistration obj;
 		
 		pageObjects.HomePage homePage;
