@@ -1,31 +1,33 @@
 pipeline {
     agent any
 
+    tools {
+        maven "MAVEN_HOME"
+    }
     stages {
+
         stage('Build') {
+          
             steps {
-                echo 'Hello World'
+             git branch: 'main',
+               url: 'https://github.com/iEjaz-ally/OpenKartSeleniumProject.git'
+
+                bat "mvn clean test -DtestNG=${params.testNG}"
             }
-        }
-        stage('Test'){
-            steps{
-                echo 'Hi from me'
-            }
-        }
-        stage('Deploy'){
-            steps{
-                echo 'how are you?'
+
+            post {
+
+                always {
+                    junit '**/target/surefire-reports/TEST-*.xml'
+                    archiveArtifacts artifacts: 'target/*.jar', allowEmptyArchive: true
+
+                    emailext(
+                        body: 'Pipeline execution completed.',
+                        subject: 'Pipeline status',
+                        to: 'mohammedejaz7007@gmail.com'
+                    )
+                }
             }
         }
     }
-post{
-
-    success{
-        echo 'This will run only if successful'
-    }
-    always{
-        emailext body: '', subject: 'Pipeline status', to: 'mohammedejaz7007@gmail.com'
-}
-
-}
 }
