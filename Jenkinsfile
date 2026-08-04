@@ -4,6 +4,10 @@ pipeline {
     tools {
         maven "MAVEN_HOME"
     }
+    parameters{
+
+        string(name: 'testNG', defaultValue: 'testNG.xml', description: 'enter the testNG.xml file name')
+    }
     stages {
 
         stage('Build') {
